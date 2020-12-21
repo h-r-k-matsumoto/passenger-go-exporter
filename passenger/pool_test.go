@@ -131,7 +131,7 @@ func TestParsePoolInfoSuccess(t *testing.T) {
 	g := sg.Group
 	assert.Equal(t, "/git/ruby/passenger-ruby-rails (development)", g.Name)
 	assert.Equal(t, "Vr5AkjIVCo8h6G43cZBB", g.UUID)
-	assert.Equal(t, "ALIVE", g.LifeStatus)
+	assert.Equal(t, "AAALIVE", g.LifeStatus)
 	assert.Equal(t, 94, g.GetWaitListSize)
 	assert.Equal(t, 2, len(g.Processes))
 
