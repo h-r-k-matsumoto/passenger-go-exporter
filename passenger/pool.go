@@ -58,9 +58,6 @@ func ParsePoolInfo(reader io.Reader) (*PoolInfo, error) {
 
 	decoder := xml.NewDecoder(reader)
 	decoder.CharsetReader = charset.NewReaderLabel
-	err := decoder.Decode(&info)
-	if err != nil {
-		return nil, err
-	}
+	decoder.Decode(&info)
 	return &info, nil
 }
