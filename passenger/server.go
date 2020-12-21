@@ -3,8 +3,6 @@
 // License that can be found in the LICENSE file.
 
 package passenger
-
-// Server is in that Passenger Application
 type Server interface {
 	// Metrics returns Passenger Application Status.
 	Metrics() (*PoolInfo, error)
